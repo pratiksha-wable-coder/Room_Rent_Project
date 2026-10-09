@@ -1,0 +1,129 @@
+
+
+.deposit-details-page {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.receipt-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.receipt-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.receipt-header {
+    background: #2d3436;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-badge {
+    background: #00b894;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.receipt-body {
+    padding: 25px;
+}
+
+.section-label {
+    color: #0984e3;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f1f2f6;
+    padding-bottom: 5px;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.label {
+    color: #000000;
+    font-size: 14px;
+}
+
+.value {
+    color: #2d3436;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.text-highlight {
+    color: #2d3436;
+    font-weight: 700;
+}
+
+.amount-summary {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.amount-row {
+    display: flex;
+    justify-content: space-between;
+    color: #636e72;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.amount-row.total {
+    border-top: 1px dashed #dfe6e9;
+    padding-top: 10px;
+    color: #2d3436;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.receipt-footer {
+    padding: 0 25px 25px;
+}
+
+.confirm-btn {
+    width: 100%;
+    background: #0984e3;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover {
+    background: #0773c5;
+}
+
+.loading-screen {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+    color: #636e72;
+}

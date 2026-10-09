@@ -1,0 +1,118 @@
+/* Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.room-card {
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 650px;
+  background: #fffcfc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.room-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Image */
+.image-placeholder img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+}
+.image-placeholder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Input groups */
+.info-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+.info-group:hover {
+  transform: translateY(-2px);
+  background-color: #f0f4ff;
+}
+.info-group label {
+  width: 100px;
+  font-weight: bold;
+  color: #444;
+}
+.input-box {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+.input-box:hover {
+  border-color: #3b5bf8;
+  box-shadow: 0 0 5px rgba(59, 91, 248, 0.5);
+}
+.description-box {
+  min-height: 40px;
+}
+
+/* Button */
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.btn-back {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  background: rgb(59,91,248);
+  transition: 0.2s ease;
+}
+.btn-back:hover {
+  transform: translateY(-2px);
+  background: #2787ed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .room-card { width: 80%; min-height: 600px; padding: 15px; }
+  .image-placeholder { height: 180px; }
+  .info-group label, .input-box { font-size: 13px; }
+  .btn-back { padding: 8px 20px; font-size: 15px; }
+}
+@media (max-width: 480px) {
+  .room-card { width: 95%; min-height: 550px; padding: 10px; }
+  .image-placeholder { height: 150px; }
+  .info-group { flex-direction: column; align-items: flex-start; }
+  .info-group label { width: 100%; margin-bottom: 5px; }
+  .input-box { width: 100%; }
+  .btn-back { width: 100%; padding: 10px; font-size: 15px; }
+}

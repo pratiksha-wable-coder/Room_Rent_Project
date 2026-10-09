@@ -1,0 +1,165 @@
+/* ===============================
+   Page background
+================================ */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+
+  background-image: url("./login_room.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: Arial, sans-serif;
+}
+
+/* ===============================
+   Login Card
+================================ */
+.login-card {
+  border: 2px solid #efe3e3;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: rgba(247, 243, 243, 0.95);
+  text-align: center;
+  width: 300px;
+}
+
+/* ===============================
+   Header
+================================ */
+.login-header {
+  margin-top: 0;
+  letter-spacing: 2px;
+  font-size: 32px;
+  color: #191818;
+}
+
+/* ===============================
+   Input groups
+================================ */
+.login-container .input-group {
+  text-align: left;
+  margin-bottom: 15px;
+   margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px;   
+}
+.login-container .input-group label {
+  display: block;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+/* ===============================
+   Inputs + Select + Textarea
+================================ */
+.login-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+ height: 40px;        /* Fix height */
+  padding: 8px 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000 !important;   
+  caret-color: #000;        
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Remove default select styling */
+select.login-input {
+  appearance: none;
+  cursor: pointer;
+    height: inherit;
+}
+
+/* Textarea styling */
+textarea.login-input {
+  resize: vertical; /* allow vertical resizing */
+  min-height: 80px;
+}
+
+/* Focus effect for input/select/textarea */
+.login-input:focus {
+  outline: none;
+  border-color: #2575fc; /* blue border on focus */
+  background-color: #f5f5f5;
+}
+
+/* Fix browser autofill background */
+input.login-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #eaeaea inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+/* ===============================
+   Button
+================================ */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  background-color: #38bdf8;
+  border: 2px solid #0a0a0a;
+
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover,
+.login-button:focus {
+  background-color: #2575fc;
+  color: white;
+  border-color: #2575fc;
+}
+
+/* ===============================
+   Footer
+================================ */
+.login-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-footer a {
+  text-decoration: underline;
+  color: black;
+}
+
+.login-footer a:hover {
+  color: #0c0b0c;
+}
+
+/* ===============================
+   Mobile Responsiveness
+================================ */
+@media (max-width: 768px) {
+  .login-card {
+    width: 90%;
+    padding: 20px;
+  }
+}

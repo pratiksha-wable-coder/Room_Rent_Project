@@ -1,0 +1,125 @@
+/* ============ RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============ PAGE ============ */
+.home-container {
+  height: 100vh;            /*  FULL SCREEN */
+  width: 100vw;
+  background-color: #f4f6f8;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;        /*  NO SCROLL */
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  height: 64px;
+  background-color: #0b1c2d;
+  flex-shrink: 0;
+}
+
+.navbar-inner {
+  max-width: 1400px;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-menu a {
+  color: #c7d2fe;
+  text-decoration: none;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ============ MAIN CONTENT ============ */
+.home-content {
+  flex: 1;                 /* ✅ TAKE REMAINING SCREEN */
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center; /* ✅ VERTICAL CENTER */
+  align-items: center;     /* ✅ HORIZONTAL CENTER */
+
+  text-align: center;
+  padding: 20px;
+}
+
+/* ============ CARD GRID ============ */
+.card-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+  flex-wrap: wrap;
+
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* ============ CARD ============ */
+.card {
+  width: 280px;            /* ✅ SMALLER CARD */
+  background: #4c44a4;
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ============ BUTTON ============ */
+.details-btn {
+  margin-top: 12px;
+  display: inline-block;
+
+  background: #38bdf8;
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  color: white;
+  text-decoration: none;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}

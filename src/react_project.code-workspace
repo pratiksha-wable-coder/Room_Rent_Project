@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../room-management"
+		}
+	],
+	"settings": {
+		"maven.view": "flat",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

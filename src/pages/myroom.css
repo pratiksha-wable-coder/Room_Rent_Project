@@ -1,0 +1,179 @@
+/* --- Wrapper to center everything --- */
+.mr-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.mr-container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.mr-title {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* --- The Main Card --- */
+.mr-card {
+    display: flex;
+    flex-direction: row; 
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .mr-card {
+        flex-direction: column; 
+    }
+}
+
+/* --- Image Section --- */
+.mr-image-section {
+    position: relative;
+    flex: 1;
+}
+
+.mr-room-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 250px;
+}
+
+.mr-status-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* --- Info Section --- */
+.mr-info-section {
+    flex: 1.2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mr-room-name {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.mr-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.mr-details-grid {
+    background: #fdfdfd;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 25px;
+}
+
+.mr-detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.mr-label {
+    font-weight: 600;
+    color: #888;
+}
+
+.mr-value {
+    font-weight: 700;
+    color: #333;
+}
+
+/* --- Buttons --- */
+.mr-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.mr-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mr-btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.mr-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.mr-btn-secondary {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.mr-btn-secondary:hover {
+    background-color: #dee2e6;
+
+}
+.mr-btn.mr-btn-danger{
+    background-color: #ff3939;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.mr-btn-primary:hover {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    
+    transition: 0.3s;
+}
+
+.mr-btn.mr-btn-danger:hover {
+    background-color: #cd3a3a;
+}
+.mr-btn.mr-btn-danger:active {
+    background-color: #ff1a1a;
+}   
+.mr-btn.mr-btn-danger:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 57, 57, 0.5);
+}
+
+/* --- Empty State --- */
+.mr-empty-state {
+    padding: 50px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}

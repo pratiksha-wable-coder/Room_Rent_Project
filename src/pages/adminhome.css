@@ -1,0 +1,109 @@
+/* ============ RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============ PAGE ============ */
+.admin-container {
+  height: 100vh;
+  width: 100vw;
+ /* background-color: #eef2f7;*/
+ background-image: url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=1500');
+  background-size:fit-cover;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  overflow: y-scroll;
+  behavior: smooth;
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  height: 64px;
+  background-color: #111827;
+  flex-shrink: 0;
+}
+
+/* ============ MAIN CONTENT ============ */
+.admin-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.admin-content h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+/* ============ CARD GRID ============ */
+.admin-card-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+  flex-wrap: wrap;
+
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* ============ CARD ============ */
+.admin-card {
+  width: 280px;
+  background: #1e3a8a;
+  color: white;
+  padding: 22px;
+  border-radius: 12px;
+
+  transition: transform 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+}
+
+.admin-card h3 {
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* ============ BUTTON ============ */
+.admin-btn {
+  display: inline-block;
+
+  background: #22c55e;
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.admin-btn:hover {
+  background: #16a34a;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .admin-card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,55 @@
+.about-container {
+  padding: 40px 20px;
+  background: #1f2937;
+  text-align: center;
+}
+
+/* Heading */
+.about-container h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Normal paragraphs (top description only) */
+.about-container > p {
+  max-width: 800px;
+  margin: 10px auto;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Features layout */
+.about-features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Feature card */
+.feature-card {
+  background: #4c44a4;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+}
+
+/* Feature title */
+.feature-card h4 {
+  margin-bottom: 10px;
+}
+
+/* FEATURE CARD PARAGRAPH COLOR (100% Working) */
+.feature-card p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Footer */
+.about-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #64748b;
+}
